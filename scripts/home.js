@@ -15,10 +15,10 @@ function userComponent(data) {
   return `<div class="home-list-item">
             <div class="home-list-item-actions">
               <button class="home-list-item-actions-remove" data-name=${name}>
-                <img src="../icons/remove.png" alt="Remove" />
+                <img src="../FinManage/icons/remove.png" alt="Remove" />
               </button>
             </div>
-            <a href="/${name}">${name}</a>
+            <a href="/FinManage/${name}">${name}</a>
           </div>`;
 }
 
@@ -38,10 +38,11 @@ async function renderHomeList(node) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const { pathname } = document.location;
-  if (pathname !== "/") {
+  if (pathname !== "/FinManage/") {
     return;
   }
-  let isLoaded = false;
+
+  let isLoaded = true;
 
   const interval = setInterval(() => {
     const root = document.querySelector("#root");

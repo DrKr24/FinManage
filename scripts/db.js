@@ -118,7 +118,7 @@ export async function editItem(storeName, id, data, type, prevType) {
 
 export async function getCurrency(storeName) {
   const store = localforage.createInstance({ name: storeName });
-  const data = await store.getItem("currency");
+  const data = await store.getItem("base");
   return data;
 }
 

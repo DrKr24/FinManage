@@ -10,7 +10,7 @@ export function rootLoadHandler(root) {
 }
 
 export function setName(pathname, node) {
-  const name = pathname.split("/")[1];
+  const name = pathname.split("/")[2];
   node.textContent = name;
   return name;
 }

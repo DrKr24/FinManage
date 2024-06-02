@@ -30,10 +30,10 @@ function incomeComponent(data) {
                 </p>
                 <div class="main__lists-item-content-item-actions">
                   <button class="main__lists-item-content-item-actions-edit income-button" data-id="${id}" data-type="income">
-                    <img src="/icons/edit.png" alt="edit" />
+                    <img src="../FinManage/icons/edit.png" alt="edit" />
                   </button>
                   <button class="main__lists-item-content-item-actions-remove income-button" data-id="${id}" data-type="income">
-                    <img src="/icons/remove.png" alt="remove" />
+                    <img src="../FinManage/icons/remove.png" alt="remove" />
                   </button>
                 </div>
                 <div class="main__lists-item-content-item-info">
@@ -55,10 +55,10 @@ function costComponent(data) {
                 </p>
                 <div class="main__lists-item-content-item-actions">
                   <button class="main__lists-item-content-item-actions-edit income-button" data-id="${id}" data-type="cost">
-                    <img src="/icons/edit.png" alt="edit" />
+                    <img src="../FinManage/icons/edit.png" alt="edit" />
                   </button>
                   <button class="main__lists-item-content-item-actions-remove cost-button" data-id="${id}" data-type="cost">
-                    <img src="/icons/remove.png" alt="remove" />
+                    <img src="../FinManage/icons/remove.png" alt="remove" />
                   </button>
                 </div>
                 <div class="main__lists-item-content-item-info">
@@ -136,7 +136,7 @@ function removeHandler(id, type) {
     ".main__difference-value-cost-value"
   );
   const { pathname } = document.location;
-  const name = pathname.split("/")[1];
+  const name = pathname.split("/")[2];
   const confirm = window.confirm("🗑️?");
   if (confirm) {
     removeItem(name, id, type).then(() => {
@@ -261,7 +261,7 @@ function searchItems(event, incomeData, costData, costNode, incomeNode) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const { pathname } = document.location;
-  if (pathname === "/") {
+  if (pathname === "/FinManage/") {
     return;
   }
   let isLoaded = false;
