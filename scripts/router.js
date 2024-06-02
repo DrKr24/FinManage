@@ -3,7 +3,7 @@ const root = document.getElementById("root");
 const currency = document.querySelector(".header__currency");
 
 function loadPageContent(path) {
-  fetch(`/FinManage/pages/${path}`)
+  fetch(`../FinManage/pages/${path}`)
     .then((response) => response.text())
     .then((html) => (root.innerHTML = html))
     .catch((error) => console.error(error));
