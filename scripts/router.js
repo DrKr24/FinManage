@@ -20,7 +20,7 @@ function loadUser(ctx, next) {
   next();
 }
 
-page("/", loadHome);
-page("/:user", loadUser);
+page("FinManage/", loadHome);
+page("FinManage/:user", loadUser);
 
 page();
