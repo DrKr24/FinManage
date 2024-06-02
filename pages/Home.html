@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Створення</title>
+  </head>
+  <body>
+    <section class="home">
+      <div class="home__inner container">
+        <h1 class="home-title" data-lang="home-title" data-lang-word="title">
+          Оберіть або створіть запис
+        </h1>
+        <div class="home__actions">
+          <input
+            type="text"
+            name="name"
+            class="home__actions-text input"
+            placeholder="Name"
+            maxlength="20"
+            autocomplete="off"
+          />
+          <select
+            name="currency"
+            class="home__actions-select-currency home-select select"
+          >
+            <option value="UAH" selected>₴</option>
+            <option value="EURO">€</option>
+            <option value="DOLLAR">$</option>
+          </select>
+          <button
+            class="home__actions-submit submit-button"
+            disabled
+            type="button"
+            data-lang="home-button"
+            data-lang-word="add"
+          >
+            Додати
+          </button>
+        </div>
+        <div class="home-list"></div>
+      </div>
+    </section>
+  </body>
+</html>

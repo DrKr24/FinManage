@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="main__inner container">
+        <p class="main__name">User</p>
+        <div class="main__actions">
+          <input
+            class="input main__actions-title"
+            name="title"
+            type="text"
+            maxlength="30"
+            placeholder="Title"
+          />
+          <input
+            class="input main__actions-value"
+            name="value"
+            type="number"
+            placeholder="Value"
+          />
+          <select name="isIncome" class="select main__actions-select">
+            <option
+              value="true"
+              selected
+              data-lang="home-income"
+              data-lang-word="income"
+            >
+              Прибуток
+            </option>
+            <option value="false" data-lang="home-cost" data-lang-word="cost">
+              Витрати
+            </option>
+          </select>
+          <button
+            class="submit-button main__actions-submit"
+            disabled
+            data-lang="home-add"
+            data-lang-word="add"
+          >
+            Додати
+          </button>
+        </div>
+        <div class="main__difference">
+          <div>
+            <div class="main__difference-value main__difference-value-income">
+              <span class="main__difference-value-type-income"></span>
+              <p class="main__difference-value-type">
+                <span data-lang="home-income-progress" data-lang-word="income"
+                  >Прибуток:</span
+                >
+                <span class="main__difference-value-income-value">0</span>
+              </p>
+            </div>
+            <div class="main__difference-value main__difference-value-cost">
+              <span class="main__difference-value-type-cost"></span>
+              <p class="main__difference-value-type">
+                <span data-lang="home-cost-progress" data-lang-word="cost"
+                  >Витрати:</span
+                >
+                <span class="main__difference-value-cost-value">0</span>
+              </p>
+            </div>
+          </div>
+          <div class="main__difference-progress">
+            <div
+              class="main__difference-progress-item main__difference-progress-income"
+            ></div>
+            <div
+              class="main__difference-progress-item main__difference-progress-cost"
+            ></div>
+          </div>
+        </div>
+        <div class="main__filters">
+          <input
+            type="text"
+            class="main__filters-search input"
+            placeholder="Search"
+          />
+          <label for="min">
+            <span
+              class="main__filters-label"
+              data-lang="home-min"
+              data-lang-word="min"
+              >Мінімально</span
+            >
+            <input
+              class="main__filters-min input-check"
+              id="min"
+              type="checkbox"
+            />
+          </label>
+          <label for="max">
+            <span
+              class="main__filters-label"
+              data-lang="home-max"
+              data-lang-word="max"
+              >Максимально</span
+            >
+            <input
+              class="main__filters-max input-check"
+              id="max"
+              type="checkbox"
+            />
+          </label>
+          <button
+            class="main__filters-submit submit-button"
+            data-lang="home-clear"
+            data-lang-word="clear"
+          >
+            Очистити
+          </button>
+        </div>
+        <div class="main__lists">
+          <div class="main__lists-item">
+            <p
+              class="main__lists-item-title"
+              data-lang="home-income-list"
+              data-lang-word="income"
+            >
+              Прибуток
+            </p>
+            <div class="main__lists-item-content main__lists-income"></div>
+          </div>
+          <div class="main__lists-item">
+            <p
+              class="main__lists-item-title"
+              data-lang="home-cost-list"
+              data-lang-word="cost"
+            >
+              Витрати
+            </p>
+            <div class="main__lists-item-content main__lists-cost"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
