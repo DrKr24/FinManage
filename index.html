@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.scss" />
+    <title>FinManage</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__inner container">
+        <a href="/" class="header__logo">FinManage</a>
+        <div class="header__actions">
+          <button class="header__theme">💡</button>
+          <div class="header__language">
+            <span class="header__language-item">UA</span
+            ><span class="header__language-item-invul"> | </span
+            ><span class="header__language-item">EN</span>
+          </div>
+        </div>
+        <div class="header__currency">
+          <ul class="header__currency-list">
+            <li
+              class="header__currency-list-item"
+              data-selected="0"
+              data-currency="UAH"
+            >
+              ₴
+            </li>
+            <li
+              class="header__currency-list-item"
+              data-selected="0"
+              data-currency="EURO"
+            >
+              €
+            </li>
+            <li
+              class="header__currency-list-item"
+              data-selected="0"
+              data-currency="DOLLAR"
+            >
+              $
+            </li>
+          </ul>
+        </div>
+        <button class="header__currency-btn"></button>
+      </div>
+    </header>
+    <div id="root"></div>
+    <script type="module" src="scripts/db.js"></script>
+    <script type="module" src="scripts/router.js"></script>
+    <script type="module" src="scripts/language.js"></script>
+    <script type="module" src="scripts/theme.js"></script>
+    <script type="module" src="scripts/currency.js"></script>
+    <script type="module" src="scripts/home.js"></script>
+    <script type="module" src="scripts/user.js"></script>
+  </body>
+</html>

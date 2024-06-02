@@ -1,0 +1,52 @@
+.home {
+  &__inner {
+    padding-top: 60px;
+    padding-inline: 15px;
+  }
+  &-title {
+    font-family: var(--second-family);
+    font-weight: 700;
+  }
+  &__actions {
+    padding-top: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+    @include mobile-large {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      row-gap: 30px;
+    }
+  }
+  &-list {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    @include mobile-large {
+      justify-content: center;
+    }
+    gap: 40px;
+    align-items: flex-start;
+    &-item {
+      position: relative;
+      padding: 30px;
+      &-actions {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        & > button {
+          cursor: pointer;
+        }
+      }
+      @extend %home-item;
+      @include flex-center;
+      & > a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

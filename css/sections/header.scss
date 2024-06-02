@@ -1,0 +1,118 @@
+.header {
+  background-color: var(--primary-color);
+  box-shadow: 0px 2px 6px var(--secondary-color);
+  &__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 25px 15px;
+    column-gap: 80px;
+    @include mobile-large {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+      grid-template-rows: repeat(2, 1fr);
+    }
+  }
+  &__logo {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 36px;
+    color: #ffffff;
+  }
+  &__actions {
+    margin-left: auto;
+    padding-right: 110px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    @include tablet {
+      gap: 30px;
+      padding-right: 0px;
+    }
+    @include mobile-large {
+      margin-left: 0px;
+    }
+  }
+  &__theme {
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    transition-duration: var(--transition-duration);
+    cursor: pointer;
+    @include hover {
+      background-color: var(--accent-color);
+    }
+  }
+  &__language {
+    &-item {
+      color: #ffffff;
+      cursor: pointer;
+      &-active {
+        color: var(--accent-color);
+      }
+      &-invul {
+        color: #ffffff;
+        font-weight: 500;
+        position: relative;
+        bottom: 1px;
+      }
+    }
+  }
+  &__currency {
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    overflow: hidden;
+    height: 38px;
+    @include laptop-large {
+      right: 15px;
+    }
+    @include laptop-large {
+      top: 20%;
+      right: 15px;
+    }
+    transition: height 0.3s;
+    visibility: hidden;
+    &-active {
+      transition: height 0.3s;
+      position: absolute;
+      right: 0;
+      top: 30%;
+      height: 120px;
+    }
+    &-list {
+      width: 60px;
+      cursor: pointer;
+      background-color: var(--accent-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &-item {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        height: max-content;
+        border-bottom: 1px solid #ffffff;
+      }
+    }
+    &-btn {
+      border-radius: 10px;
+      cursor: pointer;
+      height: 38px;
+      width: 60px;
+      background-color: transparent;
+      position: absolute;
+      right: 0;
+      @include laptop-large {
+        top: 20%;
+        right: 15px;
+      }
+    }
+  }
+}

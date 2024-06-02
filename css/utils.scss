@@ -1,0 +1,67 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin-inline: auto;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.submit-button {
+  width: 180px;
+  padding: 10px 40px;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  @include fluid-text(16, 24);
+  &:disabled {
+    background-color: var(--disabled-color);
+  }
+}
+
+.input {
+  outline: none;
+  border: none;
+  font-family: var(--second-family);
+  border-bottom: 1px solid var(--text-color);
+  background-color: var(--background-color);
+  color: var(--color-text);
+  padding: 5px 10px;
+  min-width: 360px;
+  @include fluid-text(16, 24);
+  @include tablet {
+    min-width: 220px;
+  }
+  &:focus {
+    border-bottom: 1px solid var(--accent-color);
+  }
+}
+
+.select {
+  text-align: center;
+  width: 140px;
+  padding: 5px;
+  background-color: var(--background-color);
+  color: var(--color-text);
+  @include fluid-text(16, 24);
+}
+
+.input-check {
+  background-color: var(--background-color);
+  height: 15px;
+  width: 15px;
+  &:checked {
+    accent-color: var(--accent-color);
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "homepage": "https://drkr24.github.io/FinManage/",
+  "name": "finmanage",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1",
+    "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.11",
+    "localforage": "^1.10.0",
+    "normalize-scss": "^8.0.0",
+    "page": "^1.11.6",
+    "reset-css": "^5.0.2",
+    "sass": "^1.77.0"
+  }
+}

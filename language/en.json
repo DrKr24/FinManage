@@ -1,0 +1,41 @@
+{
+  "route": {
+    "statistic": "Statistic"
+  },
+  "home-title": {
+    "title": "Select or create record"
+  },
+  "home-button": {
+    "add": "Add"
+  },
+  "home-income": {
+    "income": "Income"
+  },
+  "home-cost": {
+    "cost": "Cost"
+  },
+  "home-income-list": {
+    "income": "Income"
+  },
+  "home-cost-list": {
+    "cost": "Cost"
+  },
+  "home-income-progress": {
+    "income": "Income:"
+  },
+  "home-cost-progress": {
+    "cost": "Cost:"
+  },
+  "home-add": {
+    "add": "Add"
+  },
+  "home-clear": {
+    "clear": "Clear"
+  },
+  "home-max": {
+    "max": "Maximal"
+  },
+  "home-min": {
+    "min": "Minimal"
+  }
+}

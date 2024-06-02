@@ -1,0 +1,41 @@
+{
+  "route": {
+    "statistic": "Статистика"
+  },
+  "home-title": {
+    "title": "Оберіть або створіть запис"
+  },
+  "home-button": {
+    "add": "Додати"
+  },
+  "home-income": {
+    "income": "Прибуток"
+  },
+  "home-cost": {
+    "cost": "Витрати"
+  },
+  "home-income-list": {
+    "income": "Прибуток"
+  },
+  "home-cost-list": {
+    "cost": "Витрати"
+  },
+  "home-income-progress": {
+    "income": "Прибуток:"
+  },
+  "home-cost-progress": {
+    "cost": "Витрати:"
+  },
+  "home-add": {
+    "add": "Додати"
+  },
+  "home-clear": {
+    "clear": "Очистити"
+  },
+  "home-max": {
+    "max": "Максимально"
+  },
+  "home-min": {
+    "min": "Мінімально"
+  }
+}
